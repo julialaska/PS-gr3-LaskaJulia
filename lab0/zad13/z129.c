@@ -3,7 +3,7 @@
 
 int main()
 {   unsigned int x;
-    scanf("%lf", &x);
+    scanf("%d", &x);
     printf("%f",sqrt(x));
     return 0;
 }
