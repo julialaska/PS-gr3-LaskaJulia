@@ -44,14 +44,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="lab.c">
-			<Option compilerVar="CC" />
-			<Option target="lab" />
-		</Unit>
-		<Unit filename="lab1.c">
-			<Option compilerVar="CC" />
-			<Option target="lab" />
-		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
