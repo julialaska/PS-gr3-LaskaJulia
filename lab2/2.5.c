@@ -1,12 +1,13 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int potega(int n)
 {
-    float wynik=1;
+    int wynik=1;
     int abs_n=abs(n);
     for(int i=0;i<abs_n;i++)
     {
-        wynik*=2
+        wynik*=2;
     }
     if(n>0)
         return wynik;
@@ -18,7 +19,7 @@ int main()
     int n;
     printf("podaj n");
     scanf("%d", &n);
-    printf("%f", potega(n))
+    printf("%d", potega(n));
 
     return 0;
 }
