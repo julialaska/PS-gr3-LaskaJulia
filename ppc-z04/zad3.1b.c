@@ -76,4 +76,3 @@ short sumaUjemnych(const short tab[],int n)
     }
     printf("suma ujemnych : %d\n", suma2);
 }
-
