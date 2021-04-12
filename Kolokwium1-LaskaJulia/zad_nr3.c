@@ -10,20 +10,11 @@ int main()
     if(n == 2)
         printf("mianownik nie moze byc rowny 0 ");
 
-    ciag(n);
+    float ciag;
+    ciag=(2*n+7)/((n-2)*(n-2));
 
-    //float ciag;
-   // ciag=(2*n+7)/((n-2)*(n-2));
-
-    //printf("%f",ciag);
+    printf("%f",ciag);
 
     return 0;
 }
 
-float ciag(float n)
-{
-     float c;
-     c=(2*n+7)/((n-2)*(n-2));
-
-     return c;
-}
