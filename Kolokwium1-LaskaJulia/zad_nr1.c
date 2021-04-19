@@ -14,7 +14,7 @@ int main()
     {
         if(n%i == 0)//dzielniki
             {
-            for(j=2;j<i;j++)
+            for(j=2;j*j<=i;j++)
             {
                 if((i%j==0))
                     printf(" nie jest pierwsza %d\n", i);
@@ -25,12 +25,7 @@ int main()
             printf("nie jest dzielnikiem");
     }
 
-
-
-
-printf("%d",suma_pierw);
-
-
+    printf("%d",suma_pierw);
 
     return 0;
 }

@@ -20,6 +20,5 @@ int dzielniki(int x)
         if(x%i == 0)
             printf("%d\n",i);
     }
-    return i;
 }
 
