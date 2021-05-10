@@ -28,7 +28,7 @@ int main()
             {
                 if(czyPierwsza(i) == true && i != 1)
                 {
-                    printf(" dzielnik %d\n",i);
+                    printf("dzielnik %d\n",i);
                     ile_pierw++;
                 }
             }

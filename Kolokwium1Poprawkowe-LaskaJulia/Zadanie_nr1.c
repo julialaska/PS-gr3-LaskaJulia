@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 
-int ile_cyfr(long long int n)//int ile_liczb(int n) do liczb majacych 10 cyfr
+int ile_cyfr(int n)//int ile_liczb(int n) do liczb majacych 10 cyfr
 {
     int ile = 0;
     if(n == 0)
