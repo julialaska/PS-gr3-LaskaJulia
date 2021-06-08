@@ -75,11 +75,13 @@ int main(void)
     if( lewy < 0 || lewy > n)
     {
         printf("liczba dla zmiennej lewy poza przedzialem");
+        return 2;
     }
 
     if( prawy < 0 || prawy > n)
     {
         printf("liczba dla prawy poza przedzialem");
+        return 3;
     }
 
     odwroc(tab,lewy,prawy);

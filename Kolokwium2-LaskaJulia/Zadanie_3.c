@@ -11,22 +11,42 @@ Napisz program testuj¹cy napisane funkcje.*/
 #include<stdlib.h>
 #define MAX_LEN 50
 
-typedef struct Produkt {
+    typedef struct Produkt{
     char nazwa[MAX_LEN];
-    double cenaBrutto;
-    float stawkaVat;
+    double *cenaBrutto;
+    float *stawkaVat;
     } Produkt;
+
 
 Produkt makeProdukt(const char *nazwa, double cenaBrutto, float stawkaVAT)
 {
-  nazwa -> nazwa = nazwa;
-  &cenaBrutto-> cenaBrutto;
-  &stawkaVAT-> stawkaVAT;
+    nazwa->nazwa[];
+    cenaBrutto->cenaBrutto;
+
+}
+
+Produkt makeProdukt(const Produkt *produkt)
+{
+     scanf("%s", produkt->nazwa);
+     scanf("%f", produkt->cenaBrutto);
+     scanf("%f", produkt->stawkaVat);
+
+     produkt->nazwa=nazwa;
+     produkt->cenaBrutto=cenaBrutto;
+     produkt->stawkaVat=stawkaVAT;
+
 }
 
 void show(const Produkt *produkt)
 {
-    printf("nazwa: %s, cena brutto: %f, stawka vat: %f", produkt.nazwa, produkt.cenaBrutto, produkt.stawkaVat);
+    printf("nazwa: %s, cena brutto: %f, stawka vat: %f", produkt->nazwa, produkt->cenaBrutto, produkt->stawkaVat);
+}
+
+double cenaNetto(const Produkt *produkt)
+{
+    produkt->cenaBrutto = cenaBrutto;
+    double pom = stawkaVAT * cenaBrutto ;
+    return produkt.cenaBrutto-pom;
 }
 
 int main()
