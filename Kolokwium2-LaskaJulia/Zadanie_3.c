@@ -11,22 +11,30 @@ Napisz program testuj¹cy napisane funkcje.*/
 #include<stdlib.h>
 #define MAX_LEN 50
 
-    typedef struct Produkt{
-    char nazwa[MAX_LEN];
-    double *cenaBrutto;
-    float *stawkaVat;
-    } Produkt;
+typedef struct Produkt{
+char nazwa[MAX_LEN];
+double cenaBrutto;
+float stawkaVAT;
+} Produkt;
 
 
 Produkt makeProdukt(const char *nazwa, double cenaBrutto, float stawkaVAT)
 {
-    nazwa->nazwa[];
-    cenaBrutto->cenaBrutto;
+   // Produkt *pro=malloc(sizeof(Produkt)+nazwa*cenaBrutto*stawkaVAT);
+    /*pro->nazwa=nazwa;
+    pro->cenaBrutto=cenaBrutto;
+    pro->stawkaVat=stawkaVAT;*/
+
+    Produkt* produkt = malloc(sizeof(Produkt));
+    produkt->nazwa; //=nazwa
+    produkt->cenaBrutto=cenaBrutto;
+    produkt->stawkaVAT=stawkaVAT;
 
 }
 
-Produkt makeProdukt(const Produkt *produkt)
+Produkt makeProdukt_1(const Produkt *produkt)
 {
+    /*
      scanf("%s", produkt->nazwa);
      scanf("%f", produkt->cenaBrutto);
      scanf("%f", produkt->stawkaVat);
@@ -34,23 +42,50 @@ Produkt makeProdukt(const Produkt *produkt)
      produkt->nazwa=nazwa;
      produkt->cenaBrutto=cenaBrutto;
      produkt->stawkaVat=stawkaVAT;
+     */
+
+    produkt->nazwa;
+    produkt->cenaBrutto;
+    produkt->stawkaVAT;
 
 }
 
 void show(const Produkt *produkt)
 {
-    printf("nazwa: %s, cena brutto: %f, stawka vat: %f", produkt->nazwa, produkt->cenaBrutto, produkt->stawkaVat);
+    printf("nazwa: %s, cena brutto: %f, stawka vat: %f", produkt->nazwa, produkt->cenaBrutto, produkt->stawkaVAT);
 }
 
 double cenaNetto(const Produkt *produkt)
 {
-    produkt->cenaBrutto = cenaBrutto;
-    double pom = stawkaVAT * cenaBrutto ;
-    return produkt.cenaBrutto-pom;
+    produkt->cenaBrutto;
+    produkt->stawkaVAT;
+    double pom = (produkt->stawkaVAT/100) * (produkt->cenaBrutto) ;
+    double cenaNetto = (produkt->cenaBrutto)-pom;
+    return cenaNetto;
 }
 
+double kwotaVAT(const Produkt *produkt)
+{
+    produkt->stawkaVAT;
+}
+/*
+void produkt_destroy (Produkt *pro) {
+    free(pro->nazwa);
+    pro->nazwa = NULL;
+    free(pro->cenaBrutto);
+    pro->cenaBrutto = NULL;
+    free(pro->stawkaVAT);
+    pro->stawkaVAT = NULL;
+}
+*/
 int main()
 {
-    Produkt pierwszy;
+    Produkt pierwszy = {"samochod", 50000, 23};
+
+    makeProdukt("samochod",50000,23);
+    show(&pierwszy);
+
+    //printf("%f",cenaNetto(&pierwszy));
+    return 0;
 
 }
